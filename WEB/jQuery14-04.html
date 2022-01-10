@@ -1,0 +1,17 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('#sLiest').before('<h1>本書重點技術</h1>');
+	$('#sLiest').prepend('<li>HTML5</li>');
+	$('#sLiest').append('<li>jQuery</li>');
+	$('#sLiest').after('<p>歡迎一起來學習!</p>');
+	$('li').empty();
+
+});
+</script>
+
+<ul id="sLiest">
+	<li>CSS3</li>
+	<li>JavaScript</li>
+</ul>

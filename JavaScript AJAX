@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<heml>
+<head>
+<meta charset="utf-8" />
+<title>Ajax 標籤選單</title>
+<script type="text/javascript">
+function getData(){
+	// XMLHttpRequest 物件專門用來和伺服器作連線
+	var req=new XMLHttpRequest();
+}
+</script>
+</head>
+<body>

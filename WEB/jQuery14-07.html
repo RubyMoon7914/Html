@@ -1,0 +1,18 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('input').bind('click',sayOK);
+	});
+
+	function sayOK(){
+		if(event.target.id == 'btn1'){
+			alert('你按到 按鈕1 了!');
+		}
+		if(event.target.id == 'btn2'){
+			alert('你按到 按鈕2 了!');
+		}
+	}
+</script>
+
+<input id="btn1" value="按鈕1" type="submit"></input>
+<input id="btn2" value="按鈕2" type="submit"></input>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<heml>
+<head>
+<meta charset="uft-8" />
+<title>CSS 選擇器</title>
+<style type="text/css">
+/* 標籤 */
+body{
+	font-size: 16px;font-family: "微軟正黑體";
+}
+h3{
+	font-size: 24px;text-decoration: underline;
+}
+/* class */
+div.content{
+	padding: 10px;border: 1px dashed #888888;
+}
+
+/* id */
+#btn{
+	bordr: 1px solid #888888;
+	background-color: #ffffff;padding: 5px;
+}
+
+/* 虛擬 */
+/* hover 虛擬 */
+#btn:hover{
+	background-color: #888888;
+}
+
+/* :focus */
+input:focus{
+	border: 3px solid #ff0000;
+}
+
+
+/* 階層式 */
+.favorite a{
+	color: #0000ff; 
+}
+.demo a{
+	color: #008800;
+}
+
+</style>
+</head>
+<body>
+	<h3>Test</h3>
+	<div class="content">
+		Test World
+	</div>
+	<h3>最愛連結</h3>
+	<ul class="favorite">
+		<li><a href="https://www.google.com">Google</a></li>
+		<li><a href="https://www.facebook.com">Facebook</a></li>
+	</ul>
+	<h3>我的作品</h3>
+	<ul class="demo">
+		<li><a href="https://tw.yahoo.com/">yahoo</a></li>
+		<li><a href="https://twitter.com/?lang=zh-tw">twitter</a></li>
+	</ul>
+	<h3>聯絡方式</h3>
+	<div class="content">
+		填寫訊息<input type="text" /> <button id="btn">送出</button>
+	</div>
+</body>
+</heml>

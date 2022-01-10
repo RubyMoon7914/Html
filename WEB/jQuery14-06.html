@@ -1,0 +1,14 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#btn1').bind('click',sayOK);
+		$('#btn2').bind('click',sayOK);
+	});
+
+	function sayOK(){
+		alert('你按到 '+$(this).attr('value')+' 了!');
+	}
+</script>
+
+<button id="btn1" value="按鈕1">按鈕1</button>
+<button id="btn2" value="按鈕2">按鈕2</button>
